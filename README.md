@@ -3,7 +3,7 @@ envoyer des mails avec nodeJS en local et en production
 
 ## anglais 
 send mails with nodeJS with a Gmail account
-1- clone the project 
+1- clone the project <br>
 2- add the sender's email in the code 
 auth: {
     user: yourEmail@gmail.com,
