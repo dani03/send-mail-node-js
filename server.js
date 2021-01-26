@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const nodeMailer = require('nodemailer');
 const bodyParser = require('body-parser');
 var app = express();
@@ -21,17 +20,17 @@ app.post('/send', (request, response) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'yourEmail@gmail.com',
-      pass: 'yourPassword'
+      user: 'marcheurblanc9@gmail.com',
+      pass: 'passytoutcourt'
     }
   });
   //on recupere et envoie les données
   let emailOptions = {
     from: "gls corporation <gls@gls.com>",
     to: request.body.destinateur,
-    subject: request.body.message,
+    subject: request.body.objet,
     body: request.body.message,
-    html:'<p>bienvenue sur notre plateforme cliquer sur ce lien pour vous connecter <a href="google.com">lien ici</a></p>'
+    html:'<p>bienvenue sur notre plateforme cliquer sur ce lien pour confirmer votre compte gmailmarchemaaaa<a href="google.com">lien ici</a></p>'
   };
   transporter.sendMail(emailOptions, (error, info) => {
     if (error) {
