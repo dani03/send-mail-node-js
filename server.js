@@ -20,8 +20,8 @@ app.post('/send', (request, response) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'marcheurblanc9@gmail.com',
-      pass: 'passytoutcourt'
+      user: 'XXXX@gmail.com',
+      pass: 'XXXXXX'
     }
   });
   //on recupere et envoie les données
